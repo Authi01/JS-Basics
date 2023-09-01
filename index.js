@@ -87,3 +87,38 @@ var sliced_array = colours.slice(2, 4); // returns the elements within the set l
 console.log(sliced_array);
 colours.splice(1, 1, "grey"); // Relaces the said element in the index provided
 console.log(colours);
+var numbers = [5, 10, 15, 20, 25];
+var mapped_numbers = numbers.map((i) => i * 10); // Maps the number using a particular logic here *10
+console.log(mapped_numbers);
+var filter_numbers = numbers.filter((i) => i > 15); // filter checks for a condition
+console.log(filter_numbers);
+
+//JSON - For easy transmission and storage
+var jsonString = '{"ID":"3045", "colour":"blue"}';
+var parsedJSON = JSON.parse(jsonString);
+console.log(parsedJSON.ID); //3045
+
+//Function declaration
+function sum(a, b) {
+  console.log(a + b);
+}
+sum(10, 12);
+
+//Function expression - function with an expression
+var func = function multiple(a, b) {
+  return a * b;
+};
+console.log(func(10, 3));
+
+// Object
+const Book = {
+  Name: "To Kill a mocking bird",
+  Author: "Harper Lee",
+  Edition: 4,
+  Quote: function () {
+    console.log("It’s a Sin to Kill a Mockingbird");
+  },
+}; // object creation
+console.log(Book.Author); // gives the property Author of the Book
+Book.Price = 300; // adds a new property called price
+Book.Quote(); // Gives the method Quote of the object Book
