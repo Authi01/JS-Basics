@@ -1,4 +1,4 @@
-console.log("hola amigo ");
+console.log("hola");
 
 // variables
 const a = 10;
