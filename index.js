@@ -50,4 +50,40 @@ switch (true) {
     console.log("Invalid age");
 }
 
-// Loops
+// Loops - To find the sum of even numbers below 100
+
+// For loop
+var sum_forLoop = 0;
+for (let i = 0; i < 100; i = i + 2) {
+  sum_forLoop = sum_forLoop + i;
+}
+console.log("The sum usinf For Loop is " + sum_forLoop);
+
+// while loop
+var sum_whileLoop = 0;
+let i = 0;
+while (i < 100) {
+  sum_whileLoop = sum_whileLoop + i;
+  i = i + 2;
+}
+console.log(" The sum using While loop is " + sum_whileLoop);
+
+//Do While
+var sum_doWhile = 0;
+let k = 0;
+do {
+  sum_doWhile = sum_doWhile + k;
+  k = k + 2;
+} while (k < 100);
+console.log(" The sum using DoWhile is " + sum_doWhile);
+
+//Array methods
+let colours = ["blue", "black", "green", "pink", "yellow"];
+colours.push("white"); // Push method adds a new element is the back of the array
+console.log(colours);
+colours.pop(); // Pop method removes the last element of the array
+console.log(colours);
+var sliced_array = colours.slice(2, 4); // returns the elements within the set limit of index
+console.log(sliced_array);
+colours.splice(1, 1, "grey"); // Relaces the said element in the index provided
+console.log(colours);
